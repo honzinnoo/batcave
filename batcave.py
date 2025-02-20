@@ -67,21 +67,21 @@ class Hero:
         print(f"{self.name}: {question}")
         print(f"{self.name}: {answer}")
 
-# Místa
+
 wayne_tower = Places("Wayne Tower, největší budova Gothamu - sídlo firmy Wayne Enterprises.")
 batcave = Places("Batcave, tajná základna Batmana (utajená).")
 gotham_streets = Places("Ulice Gothamu, temné a nebezpečné.")
 arkham_asylum = Places("Arkham Asylum, blázinec pro superzločince.")
 gotham_park = Places("Park v Gothamu, místo klidu a odpočinku, může být i zrádný.")
 
-# Setting directions
+
 wayne_tower.umisti(None, gotham_streets, None, None)
 batcave.umisti(None, gotham_streets, None, None)
 gotham_streets.umisti(batcave, gotham_park, None, wayne_tower)
 arkham_asylum.umisti(None, None, None, gotham_streets)
 gotham_park.umisti(gotham_streets, None, None, None)
 
-# Creating heroes with their own question dictionaries
+
 batman_questions = {
     "Jaký je tvůj plán na dnešek?": "Budu chránit Gotham.",
     "Máš nějaké nové gadgety?": "Ano, mám několik nových překvapení pro zločince."
@@ -120,7 +120,7 @@ batman.jdi_na("východ")
 batman.kde_jsi()
 batman.place.konverzace(batman)
 
-# Bruce Wayne se nemůže potkat s Batmanem
+
 bruce_wayne.kde_jsi()
 
 
